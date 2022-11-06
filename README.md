@@ -8,16 +8,16 @@ Alt School Second Semester project
 
 ## Built With
 
-- Major langueages - HTML, Python, CSS
-- Frameworks - Flask
-- Technologies used - SQLAlchemy, Sqlite3
+- Major langueages - `HTML`, `Python`, `CSS`
+- Frameworks - `Flask`
+- Technologies used - `SQLAlchemy`, `Sqlite3`
 
 
 To get a local copy up and running follow these simple example steps.
 In your cmd or git bash, enter  `git clone https://github.com/Veektaw/Final-Blog-Project.git`
 
 ### Prerequisites
-Must have Python3.9 or newer and pip installed.
+Must have `Python3.9` or newer and pip installed.
 
 ### Setup
 Clone this repo to your local directory, and open in your local intepreter.
