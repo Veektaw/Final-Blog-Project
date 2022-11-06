@@ -1,62 +1,46 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+Alt School Second Semester project
 
-> Description the project.
+> Description of the project.
+This is web blog that enables people post their blogs to users worldwide.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Major langueages - HTML, Python, CSS
+- Frameworks - Flask
+- Technologies used - SQLAlchemy, Sqlite3
 
 
 To get a local copy up and running follow these simple example steps.
+In your cmd or git bash, enter  git clone https://github.com/Veektaw/Final-Blog-Project.git
 
 ### Prerequisites
+Must have Python3.9 or newer and pip installed.
 
 ### Setup
+Clone this repo to your local directory, and open in your local intepreter.
 
 ### Install
+Open your terminal in your interpreter, use pip install to install everything in the requirements.txt file.
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
-
+After requirements have been installed, in your terminal, type in ###python app.run### to run the app on your local directory.
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/veektaw)
+- Twitter: [@twitterhandle](https://twitter.com/veektaw)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/iyayiosevictor)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Contribution done solely by me, no issue detected.
 
 ## Show your support
 
@@ -65,8 +49,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Alt School Africa, Caleb Emelike
 
 ## 📝 License
 
