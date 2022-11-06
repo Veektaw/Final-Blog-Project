@@ -12,12 +12,13 @@ Alt School Second Semester project
 - Frameworks - `Flask`
 - Technologies used - `SQLAlchemy`, `Sqlite3`
 
+ 
+## To get a local copy up and running follow these simple example steps. 
 
-To get a local copy up and running follow these simple example steps.
 In your cmd or git bash, enter  `git clone https://github.com/Veektaw/Final-Blog-Project.git`
 
 ### Prerequisites
-Must have `Python3.9` or newer and pip installed.
+Must have `Python3.9` or newer, with pip installed.
 
 ### Setup
 Clone this repo to your local directory, and open in your local intepreter.
@@ -26,7 +27,7 @@ Clone this repo to your local directory, and open in your local intepreter.
 Open your terminal in your interpreter, use pip install to install everything in the requirements.txt file.
 
 ### Usage
-After requirements have been installed, in your terminal, type in ###python app.run### to run the app on your local directory.
+After requirements have been installed, in your terminal, type in `python app.run` to run the app as local host.
 
 ## Authors
 
@@ -37,9 +38,13 @@ After requirements have been installed, in your terminal, type in ###python app.
 - LinkedIn: [LinkedIn](https://linkedin.com/in/iyayiosevictor)
 
 
-## 🤝 Contributing
+## What I learned 🤝
 
-Contribution done solely by me, no issue detected.
+Basic routing
+Database relationship
+Message flashing
+Jinja syntax
+Linking backend to frontend
 
 ## Show your support
 
@@ -48,7 +53,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Alt School Africa, Caleb Emelike
+- Alt School Africa
+- Caleb Emelike
 
 ## 📝 License
 
