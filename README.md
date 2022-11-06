@@ -3,8 +3,7 @@
 # Project Name
 Alt School Second Semester project
 
-> Description of the project.
-This is web blog that enables people post their blogs to users worldwide.
+> This is web blog that enables people post their blogs to users worldwide.
 
 
 ## Built With
@@ -31,10 +30,10 @@ After requirements have been installed, in your terminal, type in ###python app.
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/veektaw)
-- Twitter: [@twitterhandle](https://twitter.com/veektaw)
+- GitHub: [@Veektaw](https://github.com/veektaw)
+- Twitter: [@Veektaw](https://twitter.com/veektaw)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/iyayiosevictor)
 
 
