@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+
+{% block head %}
+  <title>Home</title>
+{% endblock %}
+
+{% block body %}
+
+        {% with messages = get_flashed_messages() %}
+
+            {% if messages %}
+
+              {% for message in messages %}
+                <div role="alert" class="alert"><p class="alert-msg"> {{ message }} </p></div>
+              {% endfor %}
+
+          {% endif %}
+        
+        {% endwith %}
+
+    <nav class="navbar">
+
+        <div class="logo">My Blog</div>
+   
+        <ul class="nav-links">
+      
+        <div class="menu">
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+          {%  else %}
+                <li><a href="{{ url_for('signup') }}">Sign up</a></li>
+                <li><a href="{{ url_for('signin') }}">Sign in</a></li>
+          {% endif %}
+        </div>
+        </ul>
+
+        <div class="header">
+          <h2>Morning brew</h2>
+          <p class="dig">The best blogs since 68'</p>
+        </div>
+    </nav>
+
+      
+      <section>
+        <div class="row">
+        
+        </div>
+      </section>
+
+      <div>
+        <div class="container">
+
+      {% if blogs|length < 1 %}
+      <center>
+        <h3 class="by-class">There are no Blogs below, sign up or log in to Create</h3>
+      </center>
+
+      {% else %}
+
+        {% for blog in blogs %}
+      <center>
+        <div class="center">
+          <a href="/view_blogs/{{ blog.id }}"><h1>{{ blog.title }}</h1></a>
+          <h3 class="by">Blog by: {{blog.author}}, Posted on: {{ blog.posted.date() }}</h3>
+          {% if blog.user_id==current_user.id %}
+          <div class="action-butt">
+            <a href="/edit_blog/{{ blog.id }}"><input type="submit" value="Edit" class="submitBtn"></a>
+            <a href="/delete/{{ blog.id }}"><input type="submit" value="Delete" class="submitBtn"></a>
+          </div>
+          {% else %}
+          {% endif %}
+          <br
+          <hr>
+        </div>
+      </center>
+      </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if current_user.is_authenticated %}
+        <center>
+          <a href="{{ url_for('create_post') }}"><input type="submit" class="sub" value="Create Blog"></a>
+        </center>
+
+        {% else %}
+          <h1 style="text-align: center;" class="blink">Sign in to create blogs</h1>
+      {% endif %}
+        
+      
+      <div class="footer">
+        <h2 class="text-bot">Copyright © 2022 My Blog, Inc.</h2>
+      </div>
+
+
+{% endblock %}

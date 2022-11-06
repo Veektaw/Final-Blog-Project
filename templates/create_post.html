@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/post.css')}}">
+    {% block head %}
+        <title>Make a blog</title>
+    {% endblock %}   
+</head>
+
+
+{% block body %}
+
+    <nav class="navbar">
+
+        <div class="logo">My Blog</div>
+
+        <ul class="nav-links">
+
+            <div class="menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            {%  else %}
+                <li><a href="{{ url_for('signup') }}">Sign up</a></li>
+                <li><a href="{{ url_for('signin') }}">Sign in</a></li>
+            {% endif %}
+            </div>
+        </ul>
+    </nav>
+
+    <center>
+    <form method="POST">
+        {% if current_user.is_authenticated %}
+        <label for="title">Enter your post title:</label>
+        <br>
+        
+        <textarea name="title" rows="2" cols="100" required></textarea>
+        <br>
+
+
+        <label for="content">Enter your post here:</label>
+        <br>
+
+        <textarea id="freeform" name="content" rows="20" cols="100" required></textarea>
+        <br>
+
+
+        <input type="submit" value="Post" class="submitBtn">
+        {%  else %}
+      </form>
+    </center>
+        
+            <center>
+                <div class="sign-contain">
+                    <p class="please">Please Sign in to post a blog </p>
+                </div>
+            </center>
+    {% endif %}
+
+    <center>
+        <div class="footer">
+            <h2 class="text-bot">Copyright © 2022 My Blog, Inc.</h2>
+        </div>
+</center>
+{% endblock %}

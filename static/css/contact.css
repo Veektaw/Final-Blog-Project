@@ -9,7 +9,7 @@
 body{
   min-height: 100vh;
   width: 100%;
-  background: #c8e8e9;
+  background: #8cbed6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,7 @@ body{
 }
 .content .left-side .details i{
   font-size: 30px;
-  color: teal;
+  color: #1974d2;
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -71,7 +71,7 @@ body{
 .content .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: teal;
+  color: #1974d2;
 }
 .right-side .input-box{
   height: 50px;
@@ -107,7 +107,7 @@ body{
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: teal;
+  background: #1974d2;
   cursor: pointer;
   transition: all 0.3s ease;
 }

@@ -1,11 +1,66 @@
 body{
   min-height: 100vh;
   width: 100%;
-  background: #c8e8e9;
+  background: #8cbed6;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+.alert-msg {
+  padding-top: 0px;
+}
+
+   .alert {
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #ecc5c9;
+    font-weight: bolder;
+    font-family: Trebuchet MS;
+    color: #8f3648;
+    text-align: center;
+   }
+
+
+   .alert {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+   
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+
+
 
 .signupFrm {
   display: flex;
@@ -70,7 +125,7 @@ body{
   margin-left: auto;
   padding: 15px 30px;
   border: none;
-  background-color: teal;
+  background-color: #1974d2;
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -89,7 +144,7 @@ body{
   z-index: 10;
   font-size: 14px;
   font-weight: 600;
-  color: teal;
+  color: #1974d2;
 }
 
 .input:focus {

@@ -21,10 +21,15 @@
         <ul class="nav-links">
 
             <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/signup">Sign up</a></li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                {% if current_user.is_authenticated %}
+                      <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                {%  else %}
+                      <li><a href="{{ url_for('signup') }}">Sign up</a></li>
+                      <li><a href="{{ url_for('signin') }}">Sign in</a></li>
+                {% endif %}
             </div>
         </ul>
     </nav>
@@ -33,13 +38,15 @@
         <section class="background firstsection">
             <div class="box-main">
                 <div class="firstHalf">
+                    <center>
+                        <img src="static/css/me.jpg">
+                    </center>
                     <p class="text-big">About Me</p>
                   
                     <p class="text-small">
                         My name is Iyayi Victor,
-                        I'm a backend developer at Alt School Africa.
-                        This is a dummy about page for my Alt School
-                        second semester project You can check out my other projects
+                        I'm a junior backend developer.
+                        This is a dummy 'about page' for my project. You can check out my other projects
                         in my GitHub profile <a href="https://github.com/Veektaw">here</a>.
                     </p>
                     <br>

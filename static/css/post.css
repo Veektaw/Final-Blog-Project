@@ -1,9 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     padding-top: 0%;
     font-family: Trebuchet MS;
@@ -20,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: teal;
+    background-color: #1974d2;
     color: #fff;
    }
    .nav-links a {
@@ -55,20 +51,25 @@
   body {
     font-family: Arial;
     padding: 20px;
-    background: #f1f1f1;
-  }
-  
-  .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: #c8e8e9;
+    background: aliceblue;
   }
 
-  .blink {
+form {
+    padding-top: 30px;
+}
+
+.sign-contain {
+  height: 450px;
+  width: 100%;
+}
+
+.please {
+  
     color:red;
+    padding-top: 225px;
     text-align: center;
     animation: animate 1.5s linear infinite;
+    font-size: 40px;
  } 
   
  @keyframes animate{
@@ -83,57 +84,29 @@
    }
  }
 
-.by {
-  color: teal;
-}
-
-  .left, .right, .center {
-    float: left;
-    width: 33%;
-    color: white;
-    padding: 10px;
-    height: 50%;
+.footer {
+    padding: 20px;
     text-align: center;
- }
- .left {
-    background-color: transparent;
-    color: #1b1b1b;
- }
- .right {
-    background-color: transparent;
-    color: #1b1b1b;
- }
- .center {
-    background-color: transparent;
-    color: #1b1b1b;
- }
- .container:after {
-    clear: both;
- }
-  
+    background: #1974d2;
+    margin-top: 170px;
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+
   .text-bot {
     color: white;
   }
-  
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-  }
 
   .submitBtn {
-    display: block;
-    margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
     padding: 15px 30px;
     border: none;
-    background-color: teal;
+    background-color: #1974d2;
     color: white;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 10px;
   }
   
   .submitBtn:hover {
@@ -147,7 +120,7 @@
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
-    color: teal;
+    color: #1974d2;
   }
   
   .input:focus {
@@ -160,15 +133,4 @@
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
-  }
-
-
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: teal;
-    margin-top: 350px;
-    height: 50px;
-    font-family: sans-serif;
-    font-size: 10px;
   }

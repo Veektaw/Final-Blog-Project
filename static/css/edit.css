@@ -1,0 +1,22 @@
+.by {
+    color: #1974d2;
+  }
+  
+  .by-class {
+    color: #1974d2;
+    padding-top: 10px;
+  }
+    .left, .right, .center {
+      width: 33%;
+      color: white;
+      padding: 10px;
+      height: 50%;
+      margin-top: 40px;
+      text-align: center;
+   }
+  
+  
+   .center {
+      background-color: transparent;
+      color: #1b1b1b;
+   }
