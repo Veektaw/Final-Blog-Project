@@ -14,7 +14,7 @@ Alt School Second Semester project
 
 
 To get a local copy up and running follow these simple example steps.
-In your cmd or git bash, enter  git clone https://github.com/Veektaw/Final-Blog-Project.git
+In your cmd or git bash, enter  `git clone https://github.com/Veektaw/Final-Blog-Project.git`
 
 ### Prerequisites
 Must have Python3.9 or newer and pip installed.
