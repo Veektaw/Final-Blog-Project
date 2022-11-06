@@ -35,7 +35,7 @@ After requirements have been installed, in your terminal, type in `python app.ru
 
 - GitHub: [@Veektaw](https://github.com/veektaw)
 - Twitter: [@Veektaw](https://twitter.com/veektaw)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/iyayiosevictor)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victor-iyayi-6b7bb016b/)
 
 
 ## What I learned 🤝
